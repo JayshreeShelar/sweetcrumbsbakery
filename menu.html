@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Sweet Crumbs Bakery</title>
+  <meta name="description" content="Browse cakes, cupcakes, pastries, cookies and breads from Sweet Crumbs Bakery.">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display (headings) + Poppins (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito:wght@400;600;700&family=Pacifico&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 Play CDN (learning / local development only; use a build step in production) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#FFF4F7] font-[Nunito,sans-serif] text-[#7E5565] antialiased">
+
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <section class="relative isolate overflow-hidden border-b-4 border-[#F8B9CC] bg-linear-to-r from-[#F8B9CC] via-[#FDD3E1] to-[#FFE9F0]">
+      <div class="pointer-events-none absolute -left-10 -top-10 -z-10 h-40 w-40 rounded-full border-4 border-dashed border-white/70 motion-safe:animate-[spin_40s_linear_infinite]" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -bottom-16 left-1/3 -z-10 h-44 w-44 rounded-full bg-white/40" aria-hidden="true"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.25fr_1fr] lg:px-8 lg:py-8">
+        <div data-reveal class="text-center lg:text-left">
+          <p class="font-[Pacifico,cursive] text-xl text-[#C24A74]">Fresh every day</p>
+          <h1 class="mt-1 font-[Fraunces,serif] text-4xl font-bold text-[#5A2A3C] sm:text-5xl">Our Menu</h1>
+          <p class="mx-auto mt-3 max-w-2xl leading-relaxed text-[#5A2A3C] sm:text-lg lg:mx-0">Everything is baked fresh each day. Choose a category to browse. Prices are sample information only and this site does not take online orders.</p>
+        </div>
+        <div class="hidden items-center justify-end gap-4 lg:flex" aria-hidden="true">
+          <div class="h-44 w-36 -rotate-3 overflow-hidden rounded-t-full rounded-b-3xl border-4 border-white bg-[#F8B9CC] shadow-xl"><img src="./assets/images/cake-strawberry.jpg" alt="" class="h-full w-full object-cover" width="144" height="176" loading="lazy"></div>
+          <div class="mt-6 h-44 w-52 rotate-3 overflow-hidden rounded-3xl border-4 border-white bg-[#F8B9CC] shadow-xl"><img src="./assets/images/cupcake-rose.jpg" alt="" class="h-full w-full object-cover" width="208" height="176" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10" aria-label="Menu items">
+      <div class="flex flex-wrap justify-center gap-2" role="group" aria-label="Filter menu by category">
+        <button type="button" data-filter="all" aria-pressed="true" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#5A2A3C] ring-2 ring-[#F8B9CC] shadow-sm transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-[#FDE6EE] hover:ring-[#E26A90] aria-[pressed=true]:bg-linear-to-r aria-[pressed=true]:from-[#E9769C] aria-[pressed=true]:to-[#C8456F] aria-[pressed=true]:text-white aria-[pressed=true]:ring-[#C8456F] aria-[pressed=true]:shadow-lg aria-[pressed=true]:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">All</button>
+        <button type="button" data-filter="cakes" aria-pressed="false" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#5A2A3C] ring-2 ring-[#F8B9CC] shadow-sm transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-[#FDE6EE] hover:ring-[#E26A90] aria-[pressed=true]:bg-linear-to-r aria-[pressed=true]:from-[#E9769C] aria-[pressed=true]:to-[#C8456F] aria-[pressed=true]:text-white aria-[pressed=true]:ring-[#C8456F] aria-[pressed=true]:shadow-lg aria-[pressed=true]:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Cakes</button>
+        <button type="button" data-filter="cupcakes" aria-pressed="false" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#5A2A3C] ring-2 ring-[#F8B9CC] shadow-sm transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-[#FDE6EE] hover:ring-[#E26A90] aria-[pressed=true]:bg-linear-to-r aria-[pressed=true]:from-[#E9769C] aria-[pressed=true]:to-[#C8456F] aria-[pressed=true]:text-white aria-[pressed=true]:ring-[#C8456F] aria-[pressed=true]:shadow-lg aria-[pressed=true]:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Cupcakes</button>
+        <button type="button" data-filter="pastries" aria-pressed="false" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#5A2A3C] ring-2 ring-[#F8B9CC] shadow-sm transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-[#FDE6EE] hover:ring-[#E26A90] aria-[pressed=true]:bg-linear-to-r aria-[pressed=true]:from-[#E9769C] aria-[pressed=true]:to-[#C8456F] aria-[pressed=true]:text-white aria-[pressed=true]:ring-[#C8456F] aria-[pressed=true]:shadow-lg aria-[pressed=true]:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Pastries</button>
+        <button type="button" data-filter="cookies" aria-pressed="false" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#5A2A3C] ring-2 ring-[#F8B9CC] shadow-sm transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-[#FDE6EE] hover:ring-[#E26A90] aria-[pressed=true]:bg-linear-to-r aria-[pressed=true]:from-[#E9769C] aria-[pressed=true]:to-[#C8456F] aria-[pressed=true]:text-white aria-[pressed=true]:ring-[#C8456F] aria-[pressed=true]:shadow-lg aria-[pressed=true]:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Cookies</button>
+        <button type="button" data-filter="breads" aria-pressed="false" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#5A2A3C] ring-2 ring-[#F8B9CC] shadow-sm transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-[#FDE6EE] hover:ring-[#E26A90] aria-[pressed=true]:bg-linear-to-r aria-[pressed=true]:from-[#E9769C] aria-[pressed=true]:to-[#C8456F] aria-[pressed=true]:text-white aria-[pressed=true]:ring-[#C8456F] aria-[pressed=true]:shadow-lg aria-[pressed=true]:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Breads</button>
+      </div>
+      <p id="menu-status" class="mt-6 text-center text-sm" role="status" aria-live="polite"></p>
+      <div id="menu-grid" class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article data-category="cakes" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cake-strawberry.jpg" alt="Strawberry Cream Cake" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">From ₹850</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Strawberry Cream Cake</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Soft sponge, whipped cream and fresh strawberries.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Strawberry Cream Cake</span></a>
+          </div>
+        </article>
+        <article data-category="cakes" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cake-chocolate.jpg" alt="Chocolate Strawberry Cake" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">From ₹950</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Chocolate Strawberry Cake</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Cocoa sponge, glossy ganache and fresh berries.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Chocolate Strawberry Cake</span></a>
+          </div>
+        </article>
+        <article data-category="cakes" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cake-rose-pistachio.jpg" alt="Rose Pistachio Cake" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">From ₹1,000</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Rose Pistachio Cake</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Light sponge with rose petals and crushed pistachios.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Rose Pistachio Cake</span></a>
+          </div>
+        </article>
+        <article data-category="cupcakes" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cupcake-rose.jpg" alt="Rose Vanilla Cupcake" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹120</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Rose Vanilla Cupcake</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Soft vanilla crumb with a swirl of buttercream.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Rose Vanilla Cupcake</span></a>
+          </div>
+        </article>
+        <article data-category="cupcakes" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cupcake-red-velvet.jpg" alt="Red Velvet Cupcake" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹130</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Red Velvet Cupcake</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Cocoa-kissed sponge with cream cheese frosting.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Red Velvet Cupcake</span></a>
+          </div>
+        </article>
+        <article data-category="cupcakes" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cupcake-caramel.jpg" alt="Salted Caramel Cupcake" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹140</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Salted Caramel Cupcake</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Chocolate cupcake with caramel and chocolate drizzle.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Salted Caramel Cupcake</span></a>
+          </div>
+        </article>
+        <article data-category="pastries" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/pastry-croissant.jpg" alt="Butter Croissant" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹140</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Butter Croissant</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Laminated by hand into flaky, golden layers.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Butter Croissant</span></a>
+          </div>
+        </article>
+        <article data-category="pastries" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/pastry-fruit-tart.jpg" alt="Fresh Fruit Tart" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹180</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Fresh Fruit Tart</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Crisp shell, vanilla custard and glazed fruit.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Fresh Fruit Tart</span></a>
+          </div>
+        </article>
+        <article data-category="pastries" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/pastry-blueberry-danish.jpg" alt="Blueberry Danish" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹160</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Blueberry Danish</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Buttery pastry with blueberries and a sweet glaze.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Blueberry Danish</span></a>
+          </div>
+        </article>
+        <article data-category="cookies" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cookies-brown-butter.jpg" alt="Chocolate Chunk Cookies" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹320</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Chocolate Chunk Cookies</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Chewy centres and dark chocolate. Box of 6.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Chocolate Chunk Cookies</span></a>
+          </div>
+        </article>
+        <article data-category="cookies" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cookies-iced-pecan.jpg" alt="Iced Pecan Cookies" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹340</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Iced Pecan Cookies</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Soft cookies with vanilla glaze and pecans. Box of 6.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Iced Pecan Cookies</span></a>
+          </div>
+        </article>
+        <article data-category="cookies" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/cookies-pink-sugar.jpg" alt="Pink Sugar Cookies" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹340</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Pink Sugar Cookies</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Vanilla shortbread with pink icing. Box of 6.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Pink Sugar Cookies</span></a>
+          </div>
+        </article>
+        <article data-category="breads" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/bread-sourdough.jpg" alt="Sourdough Loaf" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹220</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Sourdough Loaf</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Slow-fermented with a crackly crust.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Sourdough Loaf</span></a>
+          </div>
+        </article>
+        <article data-category="breads" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/bread-milk-buns.jpg" alt="Soft Milk Buns" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹120</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Soft Milk Buns</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Fluffy, lightly sweet and glazed. Pack of 4.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Soft Milk Buns</span></a>
+          </div>
+        </article>
+        <article data-category="breads" data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]"><img data-photo src="./assets/images/bread-cinnamon.jpg" alt="Cinnamon Swirl Loaf" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹260</span>
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Cinnamon Swirl Loaf</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed">Soft loaf ribboned with cinnamon sugar.</p>
+            <a href="./contact.html" class="font-[Quicksand,sans-serif] mt-4 inline-flex min-h-11 items-center justify-center rounded-full border-2 border-[#E26A90] px-5 py-2 text-sm font-semibold text-[#C8456F] transition duration-300 motion-safe:hover:-translate-y-0.5 hover:bg-linear-to-r hover:from-[#E9769C] hover:to-[#C8456F] hover:text-white hover:shadow-lg hover:shadow-[#E26A90]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Enquire About This Item<span class="sr-only">: Cinnamon Swirl Loaf</span></a>
+          </div>
+        </article>
+      </div>
+      <p id="menu-empty" class="mt-8 hidden rounded-3xl bg-[#FDE6EE] p-8 text-center">Nothing in this category yet. Try another one.</p>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="./js/layout.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/menu.js" defer></script>
+</body>
+</html>

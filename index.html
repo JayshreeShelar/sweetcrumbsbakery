@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Crumbs Bakery | Baked with Love, Made to Make You Smile</title>
+  <meta name="description" content="Sweet Crumbs Bakery: handmade cakes, cupcakes, pastries, cookies and breads, baked fresh every morning.">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display (headings) + Poppins (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito:wght@400;600;700&family=Pacifico&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 Play CDN (learning / local development only; use a build step in production) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#FFF4F7] font-[Nunito,sans-serif] text-[#7E5565] antialiased">
+
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- ========== HERO: full-width banner slider (photos change automatically) ========== -->
+    <section id="hero-slider" class="relative isolate overflow-hidden bg-[#FDE6EE]" aria-roledescription="carousel" aria-label="Featured bakery photos">
+      <div class="absolute inset-0 -z-20 lg:left-[40%]">
+        <div data-slide class="absolute inset-0 transition-opacity duration-1000 motion-reduce:transition-none opacity-100" aria-hidden="false">
+          <img data-photo src="./assets/images/interior-2.jpg" alt="Pink café interior with tables by the window" class="h-full w-full object-cover" width="678" height="452" fetchpriority="high">
+          <span class="absolute bottom-24 right-4 hidden rounded-full border-2 border-white bg-[#C8456F]/90 px-4 py-1.5 font-[Pacifico,cursive] text-sm text-white shadow-lg sm:right-8 sm:inline-block lg:bottom-20">Our cosy pink café</span>
+        </div>
+        <div data-slide class="absolute inset-0 transition-opacity duration-1000 motion-reduce:transition-none opacity-0" aria-hidden="true">
+          <img data-photo src="./assets/images/gallery-made-with-love.jpg" alt="A pink celebration cake with berries and a Made with Love tag" class="h-full w-full object-cover" width="576" height="347" loading="lazy">
+          <span class="absolute bottom-24 right-4 hidden rounded-full border-2 border-white bg-[#C8456F]/90 px-4 py-1.5 font-[Pacifico,cursive] text-sm text-white shadow-lg sm:right-8 sm:inline-block lg:bottom-20">Celebration cakes</span>
+        </div>
+        <div data-slide class="absolute inset-0 transition-opacity duration-1000 motion-reduce:transition-none opacity-0" aria-hidden="true">
+          <img data-photo src="./assets/images/shop-front.jpg" alt="Bakery counter with a glass display of pastel cakes and treats" class="h-full w-full object-cover" width="678" height="452" loading="lazy">
+          <span class="absolute bottom-24 right-4 hidden rounded-full border-2 border-white bg-[#C8456F]/90 px-4 py-1.5 font-[Pacifico,cursive] text-sm text-white shadow-lg sm:right-8 sm:inline-block lg:bottom-20">Visit our bakery</span>
+        </div>
+        <div data-slide class="absolute inset-0 transition-opacity duration-1000 motion-reduce:transition-none opacity-0" aria-hidden="true">
+          <img data-photo src="./assets/images/gallery-macaron-cake.jpg" alt="A cream cake decorated with pink macarons and pearls" class="h-full w-full object-cover" width="525" height="350" loading="lazy">
+          <span class="absolute bottom-24 right-4 hidden rounded-full border-2 border-white bg-[#C8456F]/90 px-4 py-1.5 font-[Pacifico,cursive] text-sm text-white shadow-lg sm:right-8 sm:inline-block lg:bottom-20">Made fresh, made pretty</span>
+        </div>
+      </div>
+      <!-- Light pink fade: text stays readable, photo stays sharp on the right -->
+      <div class="absolute inset-0 -z-10 bg-[#FDE6EE]/70 lg:bg-transparent lg:bg-linear-to-r lg:from-[#FDE6EE] lg:from-[38%] lg:via-[#FDE6EE]/40 lg:via-[62%] lg:to-transparent" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -left-16 -top-16 -z-10 h-56 w-56 rounded-full border-4 border-dashed border-[#E26A90]/40 motion-safe:animate-[spin_40s_linear_infinite]" aria-hidden="true"></div>
+
+      <div class="mx-auto flex min-h-[32rem] max-w-7xl items-center px-4 pb-24 pt-10 sm:px-6 lg:min-h-[34rem] lg:px-8">
+        <div data-reveal class="max-w-xl">
+          <p class="mb-4 inline-flex items-center gap-2 rounded-full border-2 border-[#F8B9CC] bg-white px-4 py-1.5 font-[Quicksand,sans-serif] text-sm font-bold text-[#C24A74] shadow-md">
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21l-1.5-1.4C5.4 15 2 11.9 2 8.1 2 5 4.4 2.7 7.5 2.7c1.7 0 3.4.8 4.5 2.1 1.1-1.3 2.8-2.1 4.5-2.1C19.6 2.7 22 5 22 8.1c0 3.8-3.4 6.9-8.5 11.5z"/></svg>
+            Fresh from our oven every morning
+          </p>
+          <h1 class="font-[Fraunces,serif] text-4xl font-bold leading-tight text-[#5A2A3C] sm:text-5xl lg:text-6xl">Baked with Love, <span class="font-[Pacifico,cursive] font-normal text-[#C24A74]">Made to Make You Smile.</span></h1>
+          <p class="mt-5 text-base leading-relaxed text-[#5A2A3C] sm:text-lg">Celebration cakes, buttery pastries and warm cookies, all made by hand in small batches with honest ingredients. Come in, take a seat, and stay for a slice.</p>
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+            <a href="./menu.html" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border-2 border-[#C8456F] bg-linear-to-r from-[#E9769C] to-[#C8456F] px-7 py-3 font-[Quicksand,sans-serif] font-bold text-white shadow-lg shadow-[#E26A90]/30 transition duration-300 hover:from-[#C8456F] hover:to-[#A93A62] hover:shadow-xl motion-safe:hover:-translate-y-1 motion-safe:active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">
+              Explore Our Menu
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="./about.html" class="inline-flex min-h-12 items-center justify-center rounded-full border-2 border-[#E26A90] bg-white/80 px-7 py-3 font-[Quicksand,sans-serif] font-bold text-[#C8456F] transition duration-300 hover:bg-[#E26A90] hover:text-white hover:shadow-lg motion-safe:hover:-translate-y-1 motion-safe:active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">Our Story</a>
+          </div>
+          <ul class="mt-6 flex flex-wrap gap-x-5 gap-y-3 font-[Quicksand,sans-serif] text-sm font-bold text-[#5A2A3C]">
+            <li class="flex items-center gap-2"><span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E26A90] text-white shadow"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Handmade daily</li>
+            <li class="flex items-center gap-2"><span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E26A90] text-white shadow"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Real butter &amp; fresh fruit</li>
+            <li class="flex items-center gap-2"><span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#E26A90] text-white shadow"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Since 2014</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="absolute inset-x-0 bottom-5 flex items-center justify-center gap-2 sm:gap-3">
+        <button type="button" id="hero-prev" aria-label="Previous banner" class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#F8B9CC] bg-white text-[#C8456F] shadow-md transition hover:border-[#E26A90] hover:bg-[#E26A90] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></svg></button>
+        <div class="flex items-center gap-2 rounded-full border-2 border-[#F8B9CC] bg-white px-3 py-2 shadow-md">
+        <button type="button" data-dot aria-label="Show banner 1" aria-current="true" class="h-4 w-4 rounded-full border-2 border-[#C8456F] bg-white transition aria-[current=true]:bg-[#C8456F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]"></button>
+        <button type="button" data-dot aria-label="Show banner 2" aria-current="false" class="h-4 w-4 rounded-full border-2 border-[#C8456F] bg-white transition aria-[current=true]:bg-[#C8456F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]"></button>
+        <button type="button" data-dot aria-label="Show banner 3" aria-current="false" class="h-4 w-4 rounded-full border-2 border-[#C8456F] bg-white transition aria-[current=true]:bg-[#C8456F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]"></button>
+        <button type="button" data-dot aria-label="Show banner 4" aria-current="false" class="h-4 w-4 rounded-full border-2 border-[#C8456F] bg-white transition aria-[current=true]:bg-[#C8456F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]"></button>
+        </div>
+        <button type="button" id="hero-next" aria-label="Next banner" class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#F8B9CC] bg-white text-[#C8456F] shadow-md transition hover:border-[#E26A90] hover:bg-[#E26A90] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg></button>
+        <button type="button" id="hero-pause" aria-label="Pause banner slideshow" class="flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#F8B9CC] bg-white text-[#C8456F] shadow-md transition hover:border-[#E26A90] hover:bg-[#E26A90] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]"><span id="hero-pause-icon" class="text-sm font-bold" aria-hidden="true">||</span></button>
+      </div>
+    </section>
+
+    <!-- ========== SHOP BY CATEGORY ========== -->
+    <section class="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8" aria-label="Browse by category">
+      <ul class="grid grid-cols-5 gap-2 sm:gap-4">
+        <li data-reveal><a href="./menu.html" class="group flex flex-col items-center gap-2 text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E26A90]">
+          <span class="block aspect-square w-full max-w-[8.5rem] overflow-hidden rounded-full border-4 border-[#F8B9CC] bg-[#FDE6EE] shadow-md transition duration-500 group-hover:border-[#E26A90] group-hover:shadow-xl group-hover:shadow-[#E26A90]/40 motion-safe:group-hover:-translate-y-2 motion-safe:group-hover:rotate-3"><img data-photo src="./assets/images/cake-strawberry.jpg" alt="" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110" width="136" height="136" loading="lazy"></span>
+          <span class="rounded-full border-2 border-transparent px-1 py-1 font-[Quicksand,sans-serif] text-xs font-bold sm:px-3 sm:text-sm text-[#5A2A3C] transition duration-300 group-hover:border-[#F8B9CC] group-hover:bg-[#E26A90] group-hover:text-white">Cakes</span>
+        </a></li>
+        <li data-reveal><a href="./menu.html" class="group flex flex-col items-center gap-2 text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E26A90]">
+          <span class="block aspect-square w-full max-w-[8.5rem] overflow-hidden rounded-full border-4 border-[#F8B9CC] bg-[#FDE6EE] shadow-md transition duration-500 group-hover:border-[#E26A90] group-hover:shadow-xl group-hover:shadow-[#E26A90]/40 motion-safe:group-hover:-translate-y-2 motion-safe:group-hover:rotate-3"><img data-photo src="./assets/images/cupcake-rose.jpg" alt="" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110" width="136" height="136" loading="lazy"></span>
+          <span class="rounded-full border-2 border-transparent px-1 py-1 font-[Quicksand,sans-serif] text-xs font-bold sm:px-3 sm:text-sm text-[#5A2A3C] transition duration-300 group-hover:border-[#F8B9CC] group-hover:bg-[#E26A90] group-hover:text-white">Cupcakes</span>
+        </a></li>
+        <li data-reveal><a href="./menu.html" class="group flex flex-col items-center gap-2 text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E26A90]">
+          <span class="block aspect-square w-full max-w-[8.5rem] overflow-hidden rounded-full border-4 border-[#F8B9CC] bg-[#FDE6EE] shadow-md transition duration-500 group-hover:border-[#E26A90] group-hover:shadow-xl group-hover:shadow-[#E26A90]/40 motion-safe:group-hover:-translate-y-2 motion-safe:group-hover:rotate-3"><img data-photo src="./assets/images/pastry-croissant.jpg" alt="" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110" width="136" height="136" loading="lazy"></span>
+          <span class="rounded-full border-2 border-transparent px-1 py-1 font-[Quicksand,sans-serif] text-xs font-bold sm:px-3 sm:text-sm text-[#5A2A3C] transition duration-300 group-hover:border-[#F8B9CC] group-hover:bg-[#E26A90] group-hover:text-white">Pastries</span>
+        </a></li>
+        <li data-reveal><a href="./menu.html" class="group flex flex-col items-center gap-2 text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E26A90]">
+          <span class="block aspect-square w-full max-w-[8.5rem] overflow-hidden rounded-full border-4 border-[#F8B9CC] bg-[#FDE6EE] shadow-md transition duration-500 group-hover:border-[#E26A90] group-hover:shadow-xl group-hover:shadow-[#E26A90]/40 motion-safe:group-hover:-translate-y-2 motion-safe:group-hover:rotate-3"><img data-photo src="./assets/images/cookies-pink-sugar.jpg" alt="" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110" width="136" height="136" loading="lazy"></span>
+          <span class="rounded-full border-2 border-transparent px-1 py-1 font-[Quicksand,sans-serif] text-xs font-bold sm:px-3 sm:text-sm text-[#5A2A3C] transition duration-300 group-hover:border-[#F8B9CC] group-hover:bg-[#E26A90] group-hover:text-white">Cookies</span>
+        </a></li>
+        <li data-reveal><a href="./menu.html" class="group flex flex-col items-center gap-2 text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E26A90]">
+          <span class="block aspect-square w-full max-w-[8.5rem] overflow-hidden rounded-full border-4 border-[#F8B9CC] bg-[#FDE6EE] shadow-md transition duration-500 group-hover:border-[#E26A90] group-hover:shadow-xl group-hover:shadow-[#E26A90]/40 motion-safe:group-hover:-translate-y-2 motion-safe:group-hover:rotate-3"><img data-photo src="./assets/images/bread-rolls.jpg" alt="" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110" width="136" height="136" loading="lazy"></span>
+          <span class="rounded-full border-2 border-transparent px-1 py-1 font-[Quicksand,sans-serif] text-xs font-bold sm:px-3 sm:text-sm text-[#5A2A3C] transition duration-300 group-hover:border-[#F8B9CC] group-hover:bg-[#E26A90] group-hover:text-white">Breads</span>
+        </a></li>
+      </ul>
+    </section>
+
+
+    <!-- ========== FEATURED PRODUCTS ========== -->
+    <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10" aria-labelledby="featured-title">
+      <div data-reveal class="mx-auto max-w-2xl text-center">
+        <h2 id="featured-title" class="after:mx-auto after:mt-3 after:block after:h-1 after:w-16 after:rounded-full after:bg-[#E26A90] font-[Fraunces,serif] text-3xl font-bold text-[#5A2A3C] sm:text-4xl">Customer favourites</h2>
+        <p class="mt-3">The treats our regulars ask for first. See the full range on our menu.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-bl-2xl rounded-tr-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]">
+            <img data-photo src="./assets/images/cake-strawberry.jpg" alt="Strawberry cream cake with a slice cut out" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">From ₹850</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Strawberry Cream Cake</h3>
+            <p class="mt-2 text-sm leading-relaxed">Soft sponge, whipped cream and fresh strawberries.</p>
+          </div>
+        </article>
+        <article data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-bl-2xl rounded-tr-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]">
+            <img data-photo src="./assets/images/cupcake-rose.jpg" alt="Vanilla cupcake topped with a pink sugar rose" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹120</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Rose Vanilla Cupcake</h3>
+            <p class="mt-2 text-sm leading-relaxed">Soft vanilla crumb with a swirl of buttercream.</p>
+          </div>
+        </article>
+        <article data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-bl-2xl rounded-tr-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]">
+            <img data-photo src="./assets/images/pastry-croissant.jpg" alt="Golden butter croissant" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹140</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Butter Croissant</h3>
+            <p class="mt-2 text-sm leading-relaxed">Laminated by hand into dozens of flaky layers.</p>
+          </div>
+        </article>
+        <article data-reveal class="group flex flex-col overflow-hidden rounded-tl-[3rem] rounded-br-[3rem] rounded-bl-2xl rounded-tr-2xl bg-linear-to-b from-white to-[#FFE9F0] shadow-md hover:to-[#FFD3E2] border-2 border-[#F8B9CC] hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-[0_24px_40px_-14px_rgba(226,106,144,0.55)]">
+          <div class="relative aspect-[4/3] overflow-hidden bg-[#FDE6EE]">
+            <img data-photo src="./assets/images/cookies-brown-butter.jpg" alt="Chocolate chip oat cookies on a plate" class="h-full w-full object-cover transition duration-700 motion-safe:group-hover:scale-110 motion-safe:group-hover:rotate-1" width="600" height="450" loading="lazy">
+            <span class="absolute right-3 top-3 rounded-full bg-linear-to-r from-[#E9769C] to-[#C8456F] px-3 py-1 text-sm font-bold text-white shadow-md transition duration-300 motion-safe:group-hover:scale-110">₹320 / box of 6</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-[Fraunces,serif] text-xl font-semibold text-[#5A2A3C] transition-colors duration-300 group-hover:text-[#C24A74]">Chocolate Chunk Cookies</h3>
+            <p class="mt-2 text-sm leading-relaxed">Chewy centres, crisp edges and dark chocolate.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="mt-6 text-center text-xs">Prices are sample information only. This website does not take online orders.</p>
+      <div class="mt-6 text-center">
+        <a href="./menu.html" class="border-2 border-[#C8456F] font-[Quicksand,sans-serif] inline-flex min-h-12 items-center justify-center rounded-full duration-300 motion-safe:hover:-translate-y-1 hover:shadow-lg motion-safe:active:scale-95 bg-linear-to-r from-[#E9769C] to-[#C8456F] px-7 py-3 font-bold text-white shadow-lg shadow-[#E26A90]/30 transition hover:from-[#C8456F] hover:to-[#A93A62] hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26A90]">See the full menu</a>
+      </div>
+    </section>
+
+    <!-- ========== FRESH INGREDIENTS / HANDMADE ========== -->
+    <section class="bg-linear-to-br from-[#FFE9F0] via-white to-[#FDE6EE]" aria-labelledby="fresh-title">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-8 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8 lg:py-10">
+        <div data-reveal class="grid grid-cols-2 gap-4">
+          <div class="mt-8 aspect-[3/4] overflow-hidden rounded-t-full rounded-b-3xl bg-[#F8B9CC] shadow-lg">
+            <img data-photo src="./assets/images/baking-hands.jpg" alt="Baker’s hands dusting flour over dough" class="h-full w-full object-cover" width="600" height="800" loading="lazy">
+          </div>
+          <div class="aspect-[3/4] overflow-hidden rounded-b-full rounded-t-3xl bg-[#F8B9CC] shadow-lg">
+            <img data-photo src="./assets/images/bread-rolls.jpg" alt="Warm pull-apart bread rolls fresh from the pan" class="h-full w-full object-cover" width="600" height="800" loading="lazy">
+          </div>
+        </div>
+
+        <div data-reveal>
+          <h2 id="fresh-title" class="after:mt-3 after:block after:h-1 after:w-16 after:rounded-full after:bg-[#E26A90] font-[Fraunces,serif] text-3xl font-bold text-[#5A2A3C] sm:text-4xl">Simple ingredients, shaped by hand</h2>
+          <p class="mt-4 leading-relaxed">We bake the way a home kitchen would, only in bigger batches. Every dough is mixed, rolled and decorated by our bakers, never from a packet or a mix.</p>
+          <ul class="mt-6 space-y-3">
+            <li class="group flex gap-4 rounded-2xl border-2 border-[#F8B9CC] bg-white/80 p-3 transition duration-300 hover:border-[#E26A90] hover:shadow-lg hover:shadow-[#E26A90]/20 motion-safe:hover:-translate-y-1">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#FDE6EE] text-[#C24A74] transition duration-300 motion-safe:group-hover:rotate-12 motion-safe:group-hover:scale-110 group-hover:bg-[#F8B9CC]" aria-hidden="true">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4-3-7-6.5-7-10a7 7 0 0114 0c0 3.5-3 7-7 10z"/></svg>
+              </span>
+              <div><h3 class="font-semibold text-[#5A2A3C]">Fresh, local ingredients</h3><p class="text-sm leading-relaxed">Real butter, free-range eggs and seasonal fruit from nearby farms.</p></div>
+            </li>
+            <li class="group flex gap-4 rounded-2xl border-2 border-[#F8B9CC] bg-white/80 p-3 transition duration-300 hover:border-[#E26A90] hover:shadow-lg hover:shadow-[#E26A90]/20 motion-safe:hover:-translate-y-1">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#FDE6EE] text-[#C24A74] transition duration-300 motion-safe:group-hover:rotate-12 motion-safe:group-hover:scale-110 group-hover:bg-[#F8B9CC]" aria-hidden="true">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </span>
+              <div><h3 class="font-semibold text-[#5A2A3C]">Baked in small batches</h3><p class="text-sm leading-relaxed">We bake through the day so what you pick up is never old.</p></div>
+            </li>
+            <li class="group flex gap-4 rounded-2xl border-2 border-[#F8B9CC] bg-white/80 p-3 transition duration-300 hover:border-[#E26A90] hover:shadow-lg hover:shadow-[#E26A90]/20 motion-safe:hover:-translate-y-1">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#FDE6EE] text-[#C24A74] transition duration-300 motion-safe:group-hover:rotate-12 motion-safe:group-hover:scale-110 group-hover:bg-[#F8B9CC]" aria-hidden="true">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.3 12.7a4.5 4.5 0 016.4-6.3L12 7.7l1.3-1.3a4.5 4.5 0 016.4 6.3L12 20.4l-7.7-7.7z"/></svg>
+              </span>
+              <div><h3 class="font-semibold text-[#5A2A3C]">Decorated by hand</h3><p class="text-sm leading-relaxed">Each cake is piped and finished by a baker, so no two are exactly alike.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10" aria-labelledby="reviews-title">
+      <h2 id="reviews-title" class="after:mx-auto after:mt-3 after:block after:h-1 after:w-16 after:rounded-full after:bg-[#E26A90] text-center font-[Fraunces,serif] text-3xl font-bold text-[#5A2A3C] sm:text-4xl">Kind words from our guests</h2>
+      <p class="mt-2 text-center text-xs">Sample reviews written for demonstration.</p>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <figure data-reveal class="relative rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-2xl rounded-br-2xl bg-linear-to-br from-[#FFDCE8] to-[#FFC4D8] p-7 pt-12 border-2 border-white shadow-md hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-xl">
+          <span class="absolute left-6 top-2 font-[Fraunces,serif] text-6xl leading-none text-[#C8456F]" aria-hidden="true">&ldquo;</span>
+          <blockquote class="leading-relaxed text-[#5A2A3C]">“The birthday cake was beautiful and tasted even better. Our guests asked for the baker’s name.”</blockquote>
+          <figcaption class="mt-5 font-semibold text-[#5A2A3C]">Ananya R. <span class="block text-sm font-normal text-[#7E5565]">Birthday cake order</span></figcaption>
+        </figure>
+        <figure data-reveal class="relative rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-2xl rounded-br-2xl bg-linear-to-br from-[#FFDCE8] to-[#FFC4D8] p-7 pt-12 border-2 border-white shadow-md hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-xl">
+          <span class="absolute left-6 top-2 font-[Fraunces,serif] text-6xl leading-none text-[#C8456F]" aria-hidden="true">&ldquo;</span>
+          <blockquote class="leading-relaxed text-[#5A2A3C]">“I stop by every Saturday for a croissant and a coffee. It’s the best part of my weekend.”</blockquote>
+          <figcaption class="mt-5 font-semibold text-[#5A2A3C]">Rohan M. <span class="block text-sm font-normal text-[#7E5565]">Weekly regular</span></figcaption>
+        </figure>
+        <figure data-reveal class="relative rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-2xl rounded-br-2xl bg-linear-to-br from-[#FFDCE8] to-[#FFC4D8] p-7 pt-12 border-2 border-white shadow-md hover:border-[#E26A90] transition duration-500 motion-safe:hover:-translate-y-2 hover:shadow-xl">
+          <span class="absolute left-6 top-2 font-[Fraunces,serif] text-6xl leading-none text-[#C8456F]" aria-hidden="true">&ldquo;</span>
+          <blockquote class="leading-relaxed text-[#5A2A3C]">“They made our wedding cupcakes and everything arrived on time and looked perfect.”</blockquote>
+          <figcaption class="mt-5 font-semibold text-[#5A2A3C]">Meera &amp; Karan S. <span class="block text-sm font-normal text-[#7E5565]">Wedding celebration</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== PROMO BANNER ========== -->
+    <section class="px-4 pb-8 sm:px-6 lg:px-8 lg:pb-10" aria-labelledby="promo-title">
+      <div data-reveal class="relative mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] border-4 border-[#F8B9CC] bg-linear-to-br from-[#E9769C] to-[#C8456F] shadow-xl shadow-[#E26A90]/25 md:grid-cols-2">
+        <div class="relative flex flex-col justify-center px-6 py-8 text-center md:px-10 md:text-left">
+          <p class="font-[Pacifico,cursive] text-lg text-[#FFE9F0]">Fresh today</p>
+          <h2 id="promo-title" class="mt-1 font-[Fraunces,serif] text-3xl font-bold text-white sm:text-4xl">Come and taste what’s fresh today</h2>
+          <p class="mt-3 text-white">Walk in, pick a treat and settle by the window. Planning a celebration? Tell us about it and we’ll help you choose.</p>
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center md:flex-col md:items-start md:justify-start lg:flex-row">
+            <a href="./contact.html" class="inline-flex min-h-12 items-center justify-center rounded-full border-2 border-white bg-white px-7 py-3 font-bold text-[#C8456F] shadow-lg transition duration-300 hover:bg-[#FDE6EE] hover:shadow-xl motion-safe:hover:-translate-y-1 motion-safe:active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Visit or contact us</a>
+            <a href="./gallery.html" class="inline-flex min-h-12 items-center justify-center rounded-full border-2 border-white px-7 py-3 font-bold text-white transition duration-300 hover:bg-white hover:text-[#C8456F] motion-safe:hover:-translate-y-1 motion-safe:active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Browse the gallery</a>
+          </div>
+        </div>
+        <div class="relative min-h-56 md:min-h-full">
+          <img data-photo src="./assets/images/shop-front.jpg" alt="Bakery counter with a glass display of pastel cakes and treats" class="absolute inset-0 h-full w-full object-cover" width="678" height="452" loading="lazy">
+          <div class="absolute inset-y-0 left-0 hidden w-20 bg-linear-to-r from-[#D4668C]/60 to-transparent md:block" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="./js/layout.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
