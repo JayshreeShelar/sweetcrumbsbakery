@@ -11,25 +11,32 @@ window.SITE_PARTS = window.SITE_PARTS || {};
 window.SITE_PARTS.footer = `<!-- ========== FOOTER (shared by every page, loaded by js/layout.js) ========== -->
   <!-- ========== FOOTER (same on every page) ========== -->
   <footer class="bg-linear-to-b from-[#C8456F] to-[#A8406A] text-pink-50">
-    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+    <div class="mx-auto grid max-w-7xl gap-10 text-center sm:text-left px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
       <div>
-        <a href="./index.html" class="flex items-center gap-3 font-[Pacifico,cursive] text-xl font-normal text-white"><img src="./assets/images/logo.svg" alt="" class="h-12 w-12" width="48" height="48">Sweet Crumbs Bakery</a>
+        <a href="./index.html" class="flex items-center justify-center gap-3 font-[Pacifico,cursive] text-xl font-normal text-white sm:justify-start"><img src="./assets/images/logo.svg" alt="" class="h-12 w-12" width="48" height="48">Sweet Crumbs Bakery</a>
         <p class="mt-3 text-sm leading-relaxed">Handmade cakes, pastries and breads, baked with love.</p>
       </div>
 
-      <nav aria-label="Footer navigation">
-        <h2 class="font-semibold text-white after:mt-2 after:block after:h-0.5 after:w-8 after:rounded-full after:bg-[#F8B9CC]">Explore</h2>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="./index.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Home</a></li>
-          <li><a href="./menu.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Menu</a></li>
-          <li><a href="./about.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">About Us</a></li>
-          <li><a href="./gallery.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Gallery</a></li>
-          <li><a href="./contact.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Contact</a></li>
+      <div class="flex items-start justify-center gap-16 sm:block lg:flex lg:justify-center">
+        <nav aria-label="Footer navigation">
+          <h2 class="font-semibold text-white after:mt-2 after:block after:h-0.5 after:mx-auto after:w-8 after:rounded-full after:bg-[#F8B9CC] sm:after:mx-0">Explore</h2>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="./index.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Home</a></li>
+            <li><a href="./menu.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Menu</a></li>
+            <li><a href="./about.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">About Us</a></li>
+            <li><a href="./gallery.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Gallery</a></li>
+            <li><a href="./contact.html" class="hover:text-white hover:underline focus-visible:outline-2 focus-visible:outline-white">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="flex flex-col gap-3 sm:hidden" aria-label="Social media links">
+          <li><a href="#" aria-label="Sweet Crumbs on Instagram (sample link)" class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#C24A74] transition duration-300 motion-safe:hover:-translate-y-1 hover:bg-[#FDE6EE] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="Sweet Crumbs on Facebook (sample link)" class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#C24A74] transition duration-300 motion-safe:hover:-translate-y-1 hover:bg-[#FDE6EE] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-white"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.7c0-.9.3-1.5 1.6-1.5H16.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H8v3h2.5V21z"/></svg></a></li>
+          <li><a href="#" aria-label="Sweet Crumbs on Pinterest (sample link)" class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#C24A74] transition duration-300 motion-safe:hover:-translate-y-1 hover:bg-[#FDE6EE] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M11 8.5c2.5-.8 4.5.5 4 3-.4 2-2 3-3.2 2.2M12 10.5L10 20"/></svg></a></li>
         </ul>
-      </nav>
+      </div>
 
       <div>
-        <h2 class="font-semibold text-white after:mt-2 after:block after:h-0.5 after:w-8 after:rounded-full after:bg-[#F8B9CC]">Visit us</h2>
+        <h2 class="font-semibold text-white after:mt-2 after:block after:h-0.5 after:mx-auto after:w-8 after:rounded-full after:bg-[#F8B9CC] sm:after:mx-0">Visit us</h2>
         <address class="mt-3 space-y-2 text-sm not-italic">
           <p>Pimpri Chinchwad, Pune, Maharashtra</p>
           <p>Phone: <a href="tel:+918830532500" class="hover:text-white hover:underline">+91 88305 32500</a></p>
@@ -39,13 +46,13 @@ window.SITE_PARTS.footer = `<!-- ========== FOOTER (shared by every page, loaded
       </div>
 
       <div>
-        <h2 class="font-semibold text-white after:mt-2 after:block after:h-0.5 after:w-8 after:rounded-full after:bg-[#F8B9CC]">Opening hours</h2>
+        <h2 class="font-semibold text-white after:mt-2 after:block after:h-0.5 after:mx-auto after:w-8 after:rounded-full after:bg-[#F8B9CC] sm:after:mx-0">Opening hours</h2>
         <ul class="mt-3 space-y-1 text-sm">
           <li>Mon – Fri: 7:30 AM – 7:00 PM</li>
           <li>Saturday: 8:00 AM – 8:00 PM</li>
           <li>Sunday: 8:00 AM – 5:00 PM</li>
         </ul>
-        <ul class="mt-5 flex gap-3" aria-label="Social media links">
+        <ul class="mt-5 hidden gap-3 sm:flex" aria-label="Social media links">
           <li><a href="#" aria-label="Sweet Crumbs on Instagram (sample link)" class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#C24A74] transition duration-300 motion-safe:hover:-translate-y-1 hover:bg-[#FDE6EE] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
           <li><a href="#" aria-label="Sweet Crumbs on Facebook (sample link)" class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#C24A74] transition duration-300 motion-safe:hover:-translate-y-1 hover:bg-[#FDE6EE] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-white"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.7c0-.9.3-1.5 1.6-1.5H16.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H8v3h2.5V21z"/></svg></a></li>
           <li><a href="#" aria-label="Sweet Crumbs on Pinterest (sample link)" class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#C24A74] transition duration-300 motion-safe:hover:-translate-y-1 hover:bg-[#FDE6EE] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M11 8.5c2.5-.8 4.5.5 4 3-.4 2-2 3-3.2 2.2M12 10.5L10 20"/></svg></a></li>
